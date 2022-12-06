@@ -41,7 +41,7 @@ class UpdateRequest extends FormRequest
           'email.email' => 'Тут повинен бути електроний адрес',
           'email.unique' => 'Така електрона адреса вже існує',
           'role.required' => 'Це поле необхідно заповнити',
-          'role.integer' => 'Це поле повинне бути числового типу',
+          'role.integer' => 'Це поле повинне бути числового значення',
         ];
     }
 }
