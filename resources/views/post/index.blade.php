@@ -2,13 +2,13 @@
 
 @section('content')
 
-<main class="blog">
-    <div class="container">
-        <h1 class="edica-page-title" data-aos="fade-up">Блог</h1>
+<main class="blog" style="border-top: 1px solid #c0c1c6">
+    <div class="container" >
+        <h1 class="edica-page-title" data-aos="fade-up">Список електроніки</h1>
         <section class="featured-posts-section">
             <div class="row">
                 @foreach($posts as $post)
-                <div class="col-md-4 fetured-post blog-post" data-aos="fade-up">
+                <div class="col-md-4 fetured-post blog-post mb-4" data-aos="fade-up">
                     <div class="blog-post-thumbnail-wrapper">
                         <img src="{{'storage/' . $post->main_image }}" alt="blog post">
                     </div>
@@ -63,24 +63,24 @@
                             </a>
                         </div>
                         @endforeach
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="{{asset('assets/images/blog_5.jpg')}}" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="{{route('post.show', $post->id)}}" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
+{{--                        <div class="col-md-6 blog-post" data-aos="fade-up">--}}
+{{--                            <div class="blog-post-thumbnail-wrapper">--}}
+{{--                                <img src="{{asset('assets/images/blog_5.jpg')}}" alt="blog post">--}}
+{{--                            </div>--}}
+{{--                            <p class="blog-post-category">Blog post</p>--}}
+{{--                            <a href="{{route('post.show', $post->id)}}" class="blog-post-permalink">--}}
+{{--                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
                     </div>
                 </section>
             </div>
             <div class="col-md-4 sidebar" data-aos="fade-left">
                 <div class="widget widget-post-list">
-                    <h5 class="widget-title">Популярні фільми</h5>
+                    <h5 class="widget-title text-center">Остання додана електроніка</h5>
                     <ul class="post-list">
                         @foreach($likedPosts as $post)
-                        <li class="post">
+                        <li class="post" style="border-bottom: 1px solid #c0c1c6">
                             <a href="{{route('post.show', $post->id)}}" class="post-permalink media">
                                 <img src="{{'storage/' . $post->main_image}}" alt="blog post">
                                 <div class="media-body">
@@ -91,10 +91,10 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="widget">
-                    <h5 class="widget-title">Categories</h5>
-                    <img src="{{asset('assets/images/blog_widget_categories.jpg')}}" alt="categories" class="w-100">
-                </div>
+{{--                <div class="widget">--}}
+{{--                    <h5 class="widget-title">Categories</h5>--}}
+{{--                    <img src="{{asset('assets/images/blog_widget_categories.jpg')}}" alt="categories" class="w-100">--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>
