@@ -28,6 +28,7 @@ class StoreRequest extends FormRequest
             'email' => 'required | string | email | unique:users',
             'password' => 'required | string',
             'role' => 'required | integer',
+
         ];
     }
 
@@ -43,7 +44,7 @@ class StoreRequest extends FormRequest
             'password.required' => 'Це поле необхідно заповнити',
             'password.string' => 'Це поле повинне бути рядкового типу',
             'role.required' => 'Це поле необхідно заповнити',
-            'role.integer' => 'Це поле повинне бути числового типу',
+            'role.integer' => 'Це поле повинне бути числового значення',
         ];
     }
 }

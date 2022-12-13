@@ -15,5 +15,6 @@ class BaseController extends Controller
     public function __construct(PostService $service)
     {
         $this->service = $service;
+
     }
 }

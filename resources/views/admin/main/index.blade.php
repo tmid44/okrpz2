@@ -8,6 +8,7 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
                         <h1 class="m-0">Головна</h1>
+                        <h6 class="m-0">Ви увійшли як адміністратор сайту</h6>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->

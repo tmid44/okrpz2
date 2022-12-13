@@ -57,8 +57,9 @@
 
     @yield('content')
 
-    <footer class="main-footer">
-        <strong>Blog by Vasiliev 2022</strong>
+    <footer class="main-footer d-flex justify-content-between">
+        <strong>Лабораторна ОКРПЗ №2</strong>
+        <strong>Команда index.html</strong>
     </footer>
 
     <!-- Control Sidebar -->
